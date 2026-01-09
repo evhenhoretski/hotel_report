@@ -1,55 +1,52 @@
-Hotel Performance Dashboard (Power BI)
-Overview
+# Hotel Performance Dashboard (Power BI)
 
-Power BI dashboard for analyzing hotel revenue, occupancy, and booking performance across multiple properties and cities.
-The report focuses on key hospitality KPIs and weekly trends.
+This Power BI report analyzes hotel performance across multiple properties and cities, focusing on revenue, pricing, occupancy, and booking behavior.  
+The dashboard provides a quick operational and management-level overview.
 
-Key Metrics
+---
 
-Revenue
+## What this dashboard shows
 
-RevPAR
+- Revenue, RevPAR, ADR, and Occupancy
+- Realisation, cancellation, and no-show rates
+- Weekly performance trends
+- Booking performance by platform and room category
+- Property-level comparison
 
-ADR
+Week-over-week changes are highlighted for key metrics.
 
-Occupancy %
+---
 
-Realisation %
+## Interactivity
 
-DSRN / DBRN / DURN
+The report supports interactive filtering by:
 
-Cancellation %
+- City
+- Room type
+- Date (month / week)
+- Booking platform
 
-Average Rating
+---
 
-Includes week-over-week (WoW) change indicators.
+## Data model
 
-Filters
+The solution is built using a **star schema**:
 
-City
+- **Fact tables**: `fact_bookings`, `fact_aggregated_bookings`
+- **Dimension tables**: `dim_hotels`, `dim_rooms`, `dim_date`
 
-Room type
+All calculations are implemented as **DAX measures**.
 
-Date (month / week)
+---
 
-Booking platform
+## Dashboard preview
 
-Data Model
+![Dashboard Preview](screenshots/dashboard.png)
 
-Star schema with:
+---
 
-Fact tables: fact_bookings, fact_aggregated_bookings
+## Tools used
 
-Dimension tables: dim_hotels, dim_rooms, dim_date
-
-Business logic implemented using DAX measures.
-
-Dashboard Preview
-
-Tools
-
-Power BI Desktop
-
-DAX
-
-Power Query
+- Power BI Desktop
+- DAX
+- Power Query
