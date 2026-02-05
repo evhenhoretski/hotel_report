@@ -40,7 +40,7 @@ All calculations are implemented as **DAX measures**.
 ---
 
 ## Dashboard preview
-![Dashboard Preview](/screenshots.png)
+![Dashboard Preview](/screenshot.png)
 
 
 ---
