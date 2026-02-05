@@ -40,8 +40,8 @@ All calculations are implemented as **DAX measures**.
 ---
 
 ## Dashboard preview
+![Dashboard Preview](screenshots.png)
 
-![Dashboard Preview]([screenshots/dashboard.png](https://github.com/evhenhoretski/hotel_report/blob/main/screenshot.png))
 
 ---
 
